@@ -162,8 +162,8 @@ header {
     text-align: end;
   }
   .navigation {
-    background-color: #000000cf;
-    backdrop-filter: blur(70px);
+    background-color: black;
+
     padding: 22px 0 50px 20px;
     width: 70%;
     position: fixed;
