@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(imges/destination/background-destination-desktop.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 0 40px;
+}
+.navigation {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 30px 0;
+  width: 58%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.navigation ul a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 70px;
+  position: relative;
+  font-family: "Barlow Condensed", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navigation ul a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -31px;
+  right: 0;
+  background-color: #ffffff8c;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -31px;
+  right: 0;
+  background-color: white;
+}
+
+.main-header {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 28px;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.75px;
+}
+.main-header span {
+  color: #3c3b3b;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+.part-2 {
+  width: 42%;
+  color: #ffffff94;
+}
+.part-2 ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  position: relative;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.75px;
+  cursor: pointer;
+}
+.active-1 {
+  color: white;
+}
+.active-1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -10px;
+  right: 0;
+  background-color: white;
+}
+.header-name {
+  font-size: 100px;
+  font-family: "Bellefair", sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+.part-2 p {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  color: #ffffff94;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+hr {
+  opacity: 0.1;
+  margin-bottom: 30px;
+}
+.distance-and-time {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.distance-and-time div {
+  font-size: 18px;
+  font-family: "Barlow Condensed";
+}
+.ditance,
+.travel-time {
+  color: white;
+  text-transform: uppercase;
+}
+.nav-bar {
+  display: none;
+  color: white;
+}
+.close {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: url(imges/destination/background-destination-mobile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+  header {
+    margin: 10px 0 0 10px;
+  }
+  .navigation {
+    display: none;
+  }
+  .nav-bar {
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 23px;
+  }
+  .close {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 45px;
+    margin-right: 20px;
+    text-align: end;
+  }
+  .navigation {
+    background-color: #00000066;
+    backdrop-filter: blur(15px);
+    padding: 22px 0 50px 20px;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    z-index: 999;
+  }
+  .navigation ul li {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+  .active-res::after {
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 100%;
+    bottom: 0;
+    right: 0px;
+    background-color: white;
+  }
+  .active::after {
+    display: none;
+  }
+  section {
+    text-align: center;
+  }
+  .main-header {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 2.75px;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .part-1 img {
+    width: 170px;
+    height: 170px;
+  }
+  .part-2 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff94;
+  }
+  .part-2 ul li {
+    margin: 25px 10px;
+    font-size: 14px;
+    letter-spacing: 2.3px;
+  }
+  .header-name {
+    font-size: 56px;
+  }
+  .part-2 p {
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    color: #ffffff94;
+    line-height: 25px;
+    word-spacing: 1px;
+    width: 90%;
+    margin: auto;
+  }
+  hr {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .distance-and-time {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .ditance,
+  .travel-time {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}

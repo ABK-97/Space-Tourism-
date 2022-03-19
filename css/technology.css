@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(imges/technology/background-technology-desktop.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 0 40px;
+}
+.navigation {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 30px 0;
+  width: 58%;
+  display: flex;
+  justify-content: center;
+}
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.navigation ul a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 70px;
+  position: relative;
+  font-family: "Barlow Condensed", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navigation ul a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -31px;
+  right: 0;
+  background-color: #ffffff8c;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -31px;
+  right: 0;
+  background-color: white;
+}
+.main-header {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 28px;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.75px;
+}
+.main-header span {
+  color: #3c3b3b;
+}
+.container {
+  display: flex;
+  margin-top: 20px;
+}
+.part-1 {
+  display: flex;
+}
+.part-1-1 {
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-right: 100px;
+}
+.one,
+.two,
+.three {
+  list-style: none;
+  margin-bottom: 45px;
+  border: 1px solid #ffffff29;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  font-family: "Bellefair", sans-serif;
+  cursor: pointer;
+}
+.active-1 {
+  color: black;
+  background-color: white;
+}
+.part-1-2 {
+  margin-top: 50px;
+  width: 50%;
+}
+.part-1-2 h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff94;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.75px;
+  margin-bottom: 15px;
+}
+.part-1-2 h4 {
+  font-size: 54px;
+  font-family: "Bellefair", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.para {
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  line-height: 32px;
+  width: 89%;
+}
+.part-2 img {
+  width: 470px;
+}
+.nav-bar {
+  display: none;
+  color: white;
+}
+.close {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: url(imges/technology/background-technology-mobile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+  header {
+    margin: 10px 0 0 10px;
+  }
+  .navigation {
+    display: none;
+  }
+  .nav-bar {
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 23px;
+  }
+  .close {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 45px;
+    margin-right: 20px;
+    text-align: end;
+  }
+  .navigation {
+    background-color: #00000066;
+    backdrop-filter: blur(15px);
+    padding: 22px 0 50px 20px;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    z-index: 999;
+  }
+  .navigation ul li {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+  .active-res::after {
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 100%;
+    bottom: 0;
+    right: 0px;
+    background-color: white;
+  }
+  .active::after {
+    display: none;
+  }
+  section {
+    text-align: center;
+  }
+  .main-header {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 2.75px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: auto;
+    margin-right: 0px;
+  }
+  .part-2 {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .part-2 img {
+    width: 100%;
+    height: 222px;
+    margin-top: 0;
+  }
+  .part-1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .part-1-1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .part-1-1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+  }
+  .one,
+  .two,
+  .three {
+    margin-bottom: 0px;
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+  .part-1-2 {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .part-1-2 h5 {
+    font-size: 14px;
+    letter-spacing: 2.3px;
+    margin-bottom: 15px;
+  }
+  .part-1-2 h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .para {
+    font-size: 15px;
+    line-height: 25px;
+    width: 85%;
+    margin: auto;
+  }
+}
