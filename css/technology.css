@@ -140,7 +140,7 @@ header {
     background-attachment: fixed;
     color: white;
     overflow-y: hidden;
-    height: 100vh;
+    min-height: 100vh;
   }
   header {
     margin: 10px 0 0 10px;
