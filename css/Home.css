@@ -109,7 +109,7 @@ section {
 .close {
   display: none;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
   body {
     background: url(imges/home/background-home-mobile.jpg);
     background-size: 100%;
@@ -174,7 +174,6 @@ section {
   }
   .navigation {
     background-color: black;
-    /* backdrop-filter: blur(70px); */
     padding: 22px 0 50px 20px;
     width: 70%;
     position: fixed;
@@ -185,7 +184,6 @@ section {
   .navigation ul li {
     display: block;
     width: 100%;
-
     margin-bottom: 20px;
   }
   .active-res::after {
@@ -199,5 +197,58 @@ section {
   }
   .active::after {
     display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  body {
+    background: url(imges/home/background-home-tablet.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: hidden;
+    min-height: 100vh;
+  }
+  header {
+    margin: 0px 0 0 10px;
+  }
+  .navigation {
+    width: 72.5%;
+  }
+  .navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation ul a {
+    margin-right: 0px;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 7%;
+  }
+  .part-1 {
+    width: 64%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+    color: #ffffff85;
+    word-spacing: 1px;
+  }
+  .part-1 span {
+    letter-spacing: 2.7px;
+    font-size: 20px;
+  }
+  .part-1 div {
+    font-size: 150px;
+    line-height: 150px;
+    color: white;
   }
 }

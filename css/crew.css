@@ -131,7 +131,7 @@ header {
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
   body {
     background: url(imges/crew/background-crew-mobile.jpg);
     background-size: 100%;
@@ -162,7 +162,6 @@ header {
   }
   .navigation {
     background-color: black;
-    /* backdrop-filter: blur(70px); */
     padding: 22px 0 50px 20px;
     width: 70%;
     position: fixed;
@@ -250,6 +249,88 @@ header {
     margin: auto;
     margin-top: 0;
     width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  body {
+    background: url(imges/crew/background-crew-tablet.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: hidden;
+    min-height: 100vh;
+  }
+  header {
+    margin: 0px 0 0 10px;
+  }
+  .navigation {
+    width: 72.5%;
+  }
+  .navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation ul a {
+    margin-right: 0px;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+  }
+  .main-header {
+    font-size: 20px;
+    margin-left: 3%;
+    letter-spacing: 3.3px;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .part-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0%;
+    width: 100%;
+  }
+  .part-2 img {
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+  }
+  .part-1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .part-1 h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .part-1 h5 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .para {
+    width: 62%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .nav-bar-1 {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 3%;
+    width: 20%;
     margin-bottom: 30px;
   }
 }

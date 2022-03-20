@@ -141,7 +141,7 @@ hr {
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 599px) {
   body {
     background: url(imges/destination/background-destination-mobile.jpg);
     background-size: 100%;
@@ -172,7 +172,6 @@ hr {
   }
   .navigation {
     background-color: black;
-    /* backdrop-filter: blur(70px); */
     padding: 22px 0 50px 20px;
     width: 70%;
     position: fixed;
@@ -253,6 +252,88 @@ hr {
   .ditance,
   .travel-time {
     margin-bottom: 20px;
+    font-size: 28px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  body {
+    background: url(imges/destination/background-destination-tablet.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: hidden;
+    min-height: 100vh;
+  }
+  header {
+    margin: 0px 0 0 10px;
+  }
+  .navigation {
+    width: 72.5%;
+  }
+  .navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation ul a {
+    margin-right: 0px;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+  }
+  .main-header {
+    font-size: 20px;
+    margin-left: 3%;
+    letter-spacing: 3.3px;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .part-1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .part-2 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff94;
+  }
+  .part-2 ul li {
+    margin: 25px 10px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    line-height: 27px;
+  }
+  .header-name {
+    font-size: 80px;
+  }
+  .part-2 p {
+    font-size: 16px;
+    /* font-family: "Barlow", sans-serif; */
+    color: #ffffff94;
+    line-height: 28px;
+    word-spacing: 1px;
+    width: 79%;
+    margin: auto;
+  }
+  hr {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 79%;
+  }
+  .distance-and-time {
+    width: 40%;
+    margin: auto;
+  }
+  .ditance,
+  .travel-time {
+    margin-bottom: 40px;
     font-size: 28px;
   }
 }
